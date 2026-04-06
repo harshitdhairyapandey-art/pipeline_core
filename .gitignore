@@ -5,7 +5,46 @@ __pycache__/
 
 # C extensions
 *.so
+# -------------------------------
+# Environment Variables & Secrets
+# -------------------------------
+.env
+.env.*
+!.env.example
 
+# -------------------------------
+# Project-Specific Generated Data
+# -------------------------------
+# Ignore all generated job artifacts, text chunks, and manifests
+backend_api/runs/
+artifacts/
+
+# -------------------------------
+# Python Backend
+# -------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.pytest_cache/
+
+# -------------------------------
+# Node / Next.js Frontend
+# -------------------------------
+node_modules/
+.next/
+out/
+build/
+*.log
+
+# -------------------------------
+# OS & IDE Files
+# -------------------------------
+.DS_Store
+.vscode/
+.idea/
 # Distribution / packaging
 .Python
 build/
